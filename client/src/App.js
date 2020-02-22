@@ -3,8 +3,9 @@ import "./App.css";
 import axios from "axios";
 import PlayerData from "./components/PlayerData";
 import Navbar from "./components/Navbar";
+import PlayerChart from "./components/PlayerChart"
 
-// export const sum = (a, b) => a + b;
+
 
 class App extends React.Component {
   state = {
@@ -32,6 +33,7 @@ class App extends React.Component {
         <h1>2019 Women's World Cup Players</h1>
           <h4>*Based on total Google searches</h4>
         <PlayerData data={this.state.APICall}/>
+        <PlayerChart />
       </div>
     );
   }
